@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            /*direction: rtl;*/
+        }
+        .canvasContainar {
+            height: 140vw;
+            position: relative;
+            width: 100%;
+            /*margin: auto;*/
+        }
+        .can {
+            /*height: 100%;*/
+            position: relative;
+            /*width: 100%;*/
+            z-index: 1;
+        }
+
+        .canvasImage {
+            height: 140vw;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .title {
+            background: #39cf51;
+            width: 100%;
+            height: 48px;
+            text-align: center;
+            padding: 10px;
+            font-size: 36px;
+            margin-top: 0;
+        }
+        .download a {
+            width: 100px;
+            height: 100px;
+            background: red;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            font-style: normal;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<p class="title">
+    <span>TSP ART</span>
+</p>
+<div style="display: flex;flex-direction: row;margin: 8px">
+    <div style="width: 50%"><input type="file" id="fileInput"></div>
+    <div class="download"><a href="#"  class="button" id="btn-downlod" download="test.jpeg">download</a></div>
+</div>
+
+<div class="canvasContainar">
+
+    <canvas id="canvas" class="can" >
+    </canvas>
+    <!--<img src="" id="mirror" class="canvasImage">-->
+
+
+</div>
+<script src="js3.js"></script>
+</body>
+</html>
